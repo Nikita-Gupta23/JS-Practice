@@ -1,0 +1,159 @@
+body {
+    background-color: #fadede;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1,
+p {
+    font-family: 'Sacremento', cursive;
+    color: #fe7696;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 22px;
+}
+
+.letter {
+    width: 600px;
+    height: 400px;
+    display: inline-block;
+}
+
+.rose {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    animation: yid 5s infinite;
+    transform: translateY(40%);
+}
+
+.petal {
+    width: 50px;
+    height: 50px;
+    background-color: #fe7696;
+    border-radius: 0px 50%;
+    position: absolute;
+    box-shadow: 0 0 10px #d1123f;
+    z-index: 2;
+    transform-origin: bottom right;
+    animation: zhanki2 10s infinite;
+}
+
+.petal:nth-child(2) {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    background-color: #fe7696;
+    left: -10px;
+    animation: zhanki1 10s infinite;
+}
+
+.petal:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    z-index: 1;
+    top: -20px;
+    background-color: #f03a64;
+    transform-origin: bottom right;
+    animation: zhanki2 10s infinite;
+}
+
+.petal:nth-child(4) {
+    transform: rotate(90deg);
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    z-index: 1;
+    top: -20px;
+    background-color: #f03a64;
+    transform-origin: bottom right;
+    animation: zhanki1 10s infinite;
+}
+
+.petal:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    z-index: 0;
+    top: -30px;
+    background-color: #d1123f;
+    border-radius: 20px;
+    transform-origin: bottom right;
+    animation: zhanki2 10s infinite;
+}
+
+.leaf {
+    position: absolute;
+    top: 120px;
+    left: -115px;
+}
+
+.stem {
+    width: 240px;
+    height: 40px;
+    background-color: transparent;
+    border: 8px solid #8ac78a;
+    border-color: #77a377 transparent transparent transparent;
+    border-radius: 50% 50%;
+    transform: rotate(100deg);
+}
+
+.leaves {
+    width: 50px;
+    height: 40px;
+    border-radius: 0px 50%;
+    background-color: #77a377;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    left: 100px;
+}
+
+.leaves:nth-child(2) {
+    width: 40px;
+    height: 20px;
+    top: 40px;
+    left: 140px;
+    transform: rotate(120deg);
+}
+
+@keyframes yid {
+    50% {
+        transform: translateY(35%);
+    }
+    100% {
+        transform: translateY(40%);
+    }
+}
+
+@keyframes zhanki1 {
+    50% {
+        transform: rotate(110deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes zhanki2 {
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

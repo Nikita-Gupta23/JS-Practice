@@ -1,0 +1,71 @@
+body {
+    background-color: darkorchid;
+}
+
+#loader {
+    height: 100px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: -20px -50px;
+}
+
+#loader div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+}
+
+#d1 {
+    animation: loading 2s linear infinite;
+}
+
+#d2 {
+    animation: loading 2s linear infinite -.4s;
+}
+
+#d3 {
+    animation: loading 2s linear infinite -.8s;
+}
+
+#d4 {
+    animation: loading 2s linear infinite -1.2s;
+}
+
+#d5 {
+    animation: loading 2s linear infinite -1.6s;
+}
+
+@keyframes loading {
+    0% {
+        left: 100px;
+        top: 0px;
+    }
+    80% {
+        left: 0;
+        top: 0;
+    }
+    85% {
+        left: 0;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    90% {
+        width: 40px;
+        height: 15px;
+    }
+    95% {
+        left: 100px;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        left: 100px;
+        top: 0;
+    }
+}
